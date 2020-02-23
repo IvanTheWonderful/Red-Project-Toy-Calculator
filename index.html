@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Calculator</title>
+    <link rel="stylesheet" href="./styles/main.css">
+</head>
+<body>
+    <h1>Toy Calculator</h1>
+    <div class="screen"><span id="screen">I'm the screen</span></div>
+    <div class="wrapper">
+        <div class="buttons-number">
+            <button class="buttons" onclick="num1()">1</button>
+            <button class="buttons" onclick="num2()">2</button>
+            <button class="buttons" onclick="num3()">3</button>
+            <button class="buttons" onclick="num4()">4</button>
+            <button class="buttons" onclick="num5()">5</button>
+            <button class="buttons" onclick="num6()">6</button>
+            <button class="buttons" onclick="num7()">7</button>
+            <button class="buttons" onclick="num8()">8</button>
+            <button class="buttons" onclick="num9()">9</button>
+            <button class="buttons" >.</button>
+            <button class="buttons" onclick="num0()">0</button>
+            <button class="buttons" onclick="AC()">AC</button>
+        </div>
+        <div class="buttons-operator">
+            <button class="buttons" onclick="plus()">+</button>
+            <button class="buttons" onclick="minus()">-</button>
+            <button class="buttons" onclick="multiply()">x</button>
+            <button class="buttons" onclick="divide()">÷</button>
+            <button class="buttons" onclick="equal()">=</button>
+        </div>
+    </div>
+    <script src="./scripts/test.js"></script>
+    <script src="./scripts/main.js"></script>
+</body>
+</html>
