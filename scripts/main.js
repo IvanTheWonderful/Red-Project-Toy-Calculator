@@ -5,7 +5,7 @@ var secondNumber;
 var operator;
 var result;
 
-// Define functions of the number buttons
+// Functions for "onclick" events of the number buttons
 function num1(){
     inputNumber.push(1);
     console.log(inputNumber);
@@ -66,7 +66,20 @@ function num0(){
     showNumberOnScreen();
 }
 
-/* The AC button should reset all variables */
+/* the "." button should turn any number after into 
+that (number / (10 ^ the length of that number)) */
+function theDot(){
+    inputNumber.push('.');
+
+    console.log(inputNumber);
+    showNumberOnScreen();
+}
+
+function numberAfterDot(){
+    
+}
+
+// The AC button should reset all variables
 function AC(){
     inputNumber = [];
     firstNumber = null;
@@ -78,7 +91,6 @@ function AC(){
                 "secondNumber is "+ secondNumber,
                 "result is " + result);
 }
-
 
 /* Define functions of the operators
 "+-x÷": each can transform all digits that are clicked
@@ -148,11 +160,10 @@ function equal(){
                 "result is " + result);
     // Display the result of "number1 operator number2"
     if (isNaN(result)){
-        document.getElementById("screen").innerHTML="Dude... you can only click it ONCE!";
+        document.getElementById("screen").innerHTML="X_X error...";
     }else{
         document.getElementById("screen").innerHTML=result;
     }
-    
 }
 
 function showNumberOnScreen(){

@@ -1,21 +1,22 @@
 body{
     padding: 1em;
-    background: rgb(124, 124, 124);
-}
-
-h1{
-    color: rgb(255, 255, 255);
-    text-align: center;
-    font-size: 6vw;
 }
 
 /* button animate effects */
 .buttons{
     font-size: 5vw;
-    border-radius: 500px;
+    border-radius: 50px;
     border: 3px black solid;
-    background: rgb(148, 152, 156);
+    background: rgb(158, 158, 158);
     margin: 0.1em 0.3em;
+}
+
+.buttons-operator .buttons{
+    height: 7vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .buttons:hover{
@@ -23,7 +24,7 @@ h1{
 }
 
 .buttons:active{
-    background: rgb(148, 152, 156);
+    background: rgb(158, 158, 158);
 }
 /* end of button animate effects */
 /*  */
@@ -49,6 +50,7 @@ h1{
 /* style for positioning numbers and operators */
 .wrapper{
     display: flex;
+    background: rgb(128, 126, 126);
     border: black 6px solid;
     border-top: none;
     width: 100%;
@@ -58,7 +60,8 @@ h1{
     display: grid;
     grid-template-rows: 1fr 1fr 1fr 1fr;
     grid-template-columns: 1fr 1fr 1fr;
-    gap: 0.5em;
+    column-gap: 2vw;
+    row-gap: 3vh;
     width: 75%;
     height: 60vh;
     margin: 1em;
